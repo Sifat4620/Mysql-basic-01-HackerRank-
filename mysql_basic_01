@@ -1,0 +1,5 @@
+SELECT ei.employee_ID, ei.name
+FROM employee_information ei JOIN last_quarter_bonus lqbonus 
+ON ei.employee_ID = lqbonus.employee_ID
+WHERE ei.division = 'HR'
+AND lqbonus.bonus >= 5000;
